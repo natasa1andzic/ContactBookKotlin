@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Domaci1</string>
+    <string name="name"><u>Name</u></string>
+    <string name="surname"><u>Surname</u></string>
+    <string name="phone"><u>Phone</u></string>
+    <string name="email"><u>Email</u></string>
+    <string name="save">Save</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="phone_number">Phone number</string>
+    <string name="capture">Capture</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="no_contacts_found">No contacts found!</string>
+</resources>

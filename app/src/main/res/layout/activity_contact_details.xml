@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.natasaandzic.domaci1.activity.ContactDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        style="@style/TextLabelStyle"
+        android:text="@string/name"
+        android:layout_below="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/nameValueTv"
+        android:layout_below="@id/nameTv"
+        tools:text="@string/name"
+        style="@style/TextValueStyle" />
+
+    <TextView
+        android:id="@+id/surnameTv"
+        style="@style/TextLabelStyle"
+        android:layout_below="@id/nameValueTv"
+        android:text="@string/surname" />
+
+    <TextView
+        android:id="@+id/surnameValueTv"
+        style="@style/TextValueStyle"
+        android:layout_below="@id/surnameTv"
+        tools:text="@string/surname" />
+
+    <TextView
+        android:id="@+id/phoneTv"
+        style="@style/TextLabelStyle"
+        android:text="@string/phone_number"
+        android:layout_below="@id/surnameValueTv" />
+
+    <TextView
+        android:id="@+id/phoneValueTv"
+        style="@style/TextValueStyle"
+        android:layout_below="@id/phoneTv"
+        tools:text="@string/phone_number_example" />
+
+    <TextView
+        android:id="@+id/emailTv"
+        style="@style/TextLabelStyle"
+        android:text="@string/email"
+        android:layout_below="@id/phoneValueTv" />
+
+    <TextView
+        android:id="@+id/emailValueTv"
+        style="@style/TextValueStyle"
+        android:layout_below="@id/emailTv"
+        tools:text="@string/email_example" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        style="@style/ButtonStyle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="@string/delete"
+        android:layout_below="@id/emailValueTv" />
+
+    <Button
+        android:id="@+id/editBtn"
+        style="@style/ButtonStyle"
+        android:text="@string/edit"
+        android:layout_below="@id/emailValueTv"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

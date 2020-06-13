@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/backgroundColor"
+    android:id="@+id/tv_contact_list_item"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/labelSize"
+        android:text="@string/natasa"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/valueColor"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/surnameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/labelSize"
+        android:text="@string/andzic"
+        android:textColor="@color/valueColor"
+        />
+
+</LinearLayout>

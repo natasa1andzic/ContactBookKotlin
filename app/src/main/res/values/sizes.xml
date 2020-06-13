@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="labelSize">30sp</dimen>
+    <dimen name="valueSize">20sp</dimen>
+    <dimen name="etHeight">35dp</dimen>
+</resources>

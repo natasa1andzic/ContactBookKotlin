@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.natasaandzic.domaci1.activity.EditContactActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        style="@style/TextLabelStyle"
+        android:layout_below="@+id/toolbar"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/nameEt"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/nameTv"
+        android:hint="@string/name"
+        android:autofillHints="@string/name" />
+
+    <TextView
+        android:id="@+id/surnameTv"
+        style="@style/TextLabelStyle"
+        android:layout_below="@id/nameEt"
+        android:text="@string/surname" />
+
+    <EditText
+        android:id="@+id/surnameValueTv"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/surnameTv"
+        android:hint="@string/surname"
+        android:autofillHints="@string/surname" />
+
+    <TextView
+        android:id="@+id/phoneTv"
+        style="@style/TextLabelStyle"
+        android:text="@string/phone_number"
+        android:layout_below="@id/surnameValueTv" />
+
+    <EditText
+        android:id="@+id/phoneValueEt"
+        style="@style/EditTextStyle"
+        android:inputType="phone"
+        android:layout_below="@id/phoneTv"
+        android:hint="@string/phone_number_example"
+        android:autofillHints="@string/phone_number_example" />
+
+    <TextView
+        android:id="@+id/emailTv"
+        style="@style/TextLabelStyle"
+        android:text="@string/email"
+        android:layout_below="@id/phoneValueEt" />
+
+    <EditText
+        android:id="@+id/emailValueEt"
+        style="@style/EditTextStyle"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/emailTv"
+        android:hint="@string/email_example"
+        android:autofillHints="@string/email_example" />
+
+    <Button
+        android:id="@+id/btn_edit_contact_save"
+        style="@style/ButtonStyle"
+        android:text="@string/save"
+        android:layout_below="@+id/emailValueEt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

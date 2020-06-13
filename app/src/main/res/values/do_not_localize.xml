@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_number_example">+38169....</string>
+    <string name="email_example">email@email.com</string>
+    <string name="plus">+</string>
+    <string name="natasa">Natasa</string>
+    <string name="andzic">Andzic</string>
+
+</resources>
